@@ -1,0 +1,4 @@
+name: application
+help: An example cli.
+commands:
+  - import: app/config/example.yml

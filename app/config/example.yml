@@ -1,0 +1,7 @@
+name: example
+help: Example text.
+filename: commands/example
+args:
+  - name: example
+    help: Example argument
+    required: true

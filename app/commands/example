@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+
+if running_in_ubuntu_for_windows;
+then
+    cat "${args[path]}" | clip.exe
+else
+    echo "${args[path]}" | xclip -sel clip
+fi
+
+info "Copied ${args[path]} contents to clipboard."
+
+set +e
